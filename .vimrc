@@ -54,7 +54,8 @@ set foldenable
 set wrap
 set wrapmargin=8
 set linebreak
-set showbreak=…
+"set showbreak=… " something wrong with this and writing on other
+"platofrms?
 set autoindent
 set smartindent
 
