@@ -7,7 +7,7 @@ The root idea for this comes from [here](https://developer.atlassian.com/blog/20
 ```
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-git clone --bare <git-repo-url> $HOME/.
+git clone --bare <git-repo-url> $HOME/.cfg
 
 config checkout
 
