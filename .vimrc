@@ -18,6 +18,7 @@ filetype plugin indent on
 
 syntax on
 set background=dark
+:set t_Co=256
 colorscheme solarized
 
 let mapleader = ","
