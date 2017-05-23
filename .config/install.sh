@@ -10,7 +10,7 @@ fi
 # TODO: put this into gitconfig
 git config --global user.name "Mike White"
 git config --global user.email "mike.j.white@gmail.com"
-git config --global github.user = "mikejwhite"
+git config --global github.user "mikejwhite"
 
 ##SHELL SETUP
 # set zsh to be the shell
