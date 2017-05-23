@@ -1,11 +1,28 @@
-Dotfiles
+#Dotfiles
 
-https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
+The root idea for this comes from [here](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
+## Installation
 
+```
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 git clone --bare <git-repo-url> $HOME/.
 
 config checkout
+
+~/.config/install.sh
+```
+
+## Notes
+
+ - Remember to set up your ssh keys.
+
+## TODO
+
+ - The git config should be pulled into its own file
+
+ - FZF and ACK aren't installed.
+
+ - The OSX version of the package installs (brew) aren't functional
 
