@@ -51,6 +51,13 @@ set title
 " show all folds
 set foldenable 
 
+" tabs
+set expandtab
+set smarttab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
 "wrap
 set wrap
 set wrapmargin=8
@@ -66,13 +73,8 @@ nnoremap <silent> k gk
 nnoremap <silent> ^ g^
 nnoremap <silent> $ g$
 
-"wrap
-"space open and closes folds
-
-
 "space open and closes folds
 " nnoremap <space> za 
-"wrap
 
 "turn off search highlighting
 nnoremap <space> :nohlsearch<CR>
