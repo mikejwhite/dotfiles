@@ -55,11 +55,13 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx)
+plugins=(git osx tmux)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+bindkey '/e[A' history-beginning-search-backward
+bindkey '/e[B' history-beginning-search-forward
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

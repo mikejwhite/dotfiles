@@ -29,6 +29,12 @@ set showcmd
 
 set mouse=a
 
+"bells - they are annoying
+set noerrorbells
+set visualbell
+set t_vb=
+set tm=500
+
 "backup directories
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
