@@ -13,6 +13,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-fugitive' 
 Plugin 'tpope/vim-unimpaired' 
+Plugin 'google/vim-maktaba'
+Plugin 'bazelbuild/vim-bazel'
 
 call vundle#end()
 filetype plugin indent on
