@@ -5,7 +5,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf', {'dir':'~/.fzf', 'do': './install --all'}
+Plugin 'junegunn/fzf.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/nerdtree'
 Plugin 'flazz/vim-colorschemes'
