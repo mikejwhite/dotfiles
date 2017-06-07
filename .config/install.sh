@@ -12,6 +12,9 @@ git config --global user.name "Mike White"
 git config --global user.email "mike.j.white@gmail.com"
 git config --global github.user "mikejwhite"
 
+# squelsh git push messages for simple behaviour
+git config --global push.default simple
+
 ##SHELL SETUP
 # set zsh to be the shell
 if ! [[$SHELL =~ .*zsh.* ]]; then
