@@ -14,6 +14,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-fugitive' 
 Plugin 'tpope/vim-unimpaired' 
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
 Plugin 'google/vim-maktaba'
 Plugin 'bazelbuild/vim-bazel'
 
@@ -89,14 +91,27 @@ nnoremap <silent> $ g$
 "turn off search highlighting
 nnoremap <space> :nohlsearch<CR>
 
+inoremap jk <esc>
+
 nmap <silent> <leader>r :buffers<CR>
+nmap <leader>, :w<CR>
+
 "
 "nerdtree
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
 "fzf
-nmap <silent> <leader>t :FZF<CR>
+if isdirectory(".git")
+    nmap <silent> <leader>t :GFiles<CR>
+else
+    nmap <silent> <leader>t :FZF<CR>
+endif
 
+nmap <leader><tab> <plug>(fzf-maps-n)
+xmap <leader><tab> <plug>(fzf-maps-x)
+omap <leader><tab> <plug>(fzf-maps-o)
+
+"
 "ack
 nmap <silent> <leader>a :Ack<CR>
