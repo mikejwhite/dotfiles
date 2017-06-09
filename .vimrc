@@ -18,6 +18,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'google/vim-maktaba'
 Plugin 'bazelbuild/vim-bazel'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on

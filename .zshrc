@@ -13,6 +13,10 @@ DEFAULT_USER="$USER"
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+# Golang paths
+export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
