@@ -1,27 +1,26 @@
 set nocompatible
 filetype off
 
-" vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"plugins
+call plug#begin('~/.vim/plugged')
 
-Plugin 'junegunn/fzf', {'dir':'~/.fzf', 'do': './install --all'}
-Plugin 'junegunn/fzf.vim'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'scrooloose/nerdtree'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'mileszs/ack.vim'
-Plugin 'tpope/vim-fugitive' 
-Plugin 'tpope/vim-unimpaired' 
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-surround'
-Plugin 'google/vim-maktaba'
-Plugin 'bazelbuild/vim-bazel'
-Plugin 'fatih/vim-go'
+Plug 'junegunn/fzf', {'dir':'~/.fzf', 'do': './install --all'}
+Plug 'junegunn/fzf.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'scrooloose/nerdtree'
+Plug 'flazz/vim-colorschemes'
+Plug 'altercation/vim-colors-solarized'
+Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-fugitive' 
+Plug 'tpope/vim-unimpaired' 
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'google/vim-maktaba'
+Plug 'bazelbuild/vim-bazel'
+Plug 'fatih/vim-go'
 
-call vundle#end()
-filetype plugin indent on
+call plug#end()
+"filetype plugin indent on
 
 syntax on
 set background=dark
