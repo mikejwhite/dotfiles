@@ -80,11 +80,23 @@ set linebreak
 set autoindent
 set smartindent
 
+set autoread "automatically read file changes
+
+"quickfix
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+nnoremap <leader>q :cclose<CR>
+
+" shortcut to save
+nmap <leader>, :w<cr>
+
 "make up and down work as you would expect
 nnoremap <silent> j gj
 nnoremap <silent> k gk
 nnoremap <silent> ^ g^
 nnoremap <silent> $ g$
+
+set autowrite " write the file if :make is called 
 
 "space open and closes folds
 " nnoremap <space> za 
@@ -113,6 +125,21 @@ nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
 omap <leader><tab> <plug>(fzf-maps-o)
 
-"
 "ack
 nmap <silent> <leader>a :Ack<CR>
+
+"fugitive
+nmap <silent> <leader>gs :Gstatus<cr>
+nmap <leader>ge :Gedit<cr>
+nmap <silent><leader>gr :Gread<cr>
+nmap <silent><leader>gb :Gblame<cr>
+
+"fatih-vimgo
+let g:go_fmt_command = "goimports"
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_generate_tags = 1
+
