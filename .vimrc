@@ -52,6 +52,9 @@ vnoremap . :normal .<cr>
 " make backspace work
 set backspace=indent,eol,start
 
+" clipboard
+set clipboard=unnamed
+
 " search
 set ignorecase
 set smartcase
