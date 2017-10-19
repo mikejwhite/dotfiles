@@ -15,9 +15,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired' 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-dispatch'
 Plug 'google/vim-maktaba'
 Plug 'bazelbuild/vim-bazel'
 Plug 'fatih/vim-go'
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 "filetype plugin indent on
@@ -123,6 +125,8 @@ else
     nmap <silent> <leader>t :FZF<CR>
 endif
 
+
+nmap <silent> <leader>r :Buffers<CR>
 nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
 omap <leader><tab> <plug>(fzf-maps-o)
