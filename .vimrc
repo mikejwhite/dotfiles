@@ -19,7 +19,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'google/vim-maktaba'
 Plug 'bazelbuild/vim-bazel'
 Plug 'fatih/vim-go'
-Plug 'OmniSharp/omnisharp-vim'
+"Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 "filetype plugin indent on
