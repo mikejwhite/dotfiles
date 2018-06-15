@@ -18,6 +18,8 @@ export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin
 
 eval $(thefuck --alias)
+
+LS_COLORS="ow=01;36;40" && export LS_COLORS
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
