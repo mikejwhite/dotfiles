@@ -140,6 +140,10 @@ nmap <leader>ge :Gedit<cr>
 nmap <silent><leader>gr :Gread<cr>
 nmap <silent><leader>gb :Gblame<cr>
 
+command! -bang -nargs=* Find call fzf#vim#grep(
+            \ 'rg --column --line-number --no-heading --follow --color=always '.<q-args>, 1,            
+            \ <bang>0 ? fzf#vim#with_preview('up:60%') : fzf#vim#with_preview('right:50%:hidden', '?'), <bang>0)
+
 "fatih-vimgo
 let g:go_fmt_command = "goimports"
 let g:go_highlight_types = 1
