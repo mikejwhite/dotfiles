@@ -4,6 +4,10 @@ The root idea for this comes from [here](https://developer.atlassian.com/blog/20
 
 ## Installation
 
+### 
+Reminder: Setup your SSH keys so you don't have to change the git remote, and clone with git@github.com:username/repo.git.
+
+
 ```
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
@@ -14,12 +18,8 @@ config checkout
 ~/.config/install.sh
 ```
 
-## Notes
-
- - Remember to set up your ssh keys.
-
 ## TODO
- - ACK aren't installed.
+ - ACK isn't installed.
 
  - The OSX version of the package installs (brew) aren't functional
 
