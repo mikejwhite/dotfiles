@@ -63,7 +63,7 @@ LS_COLORS="ow=01;36;40" && export LS_COLORS
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx tmux httpie docker)
+plugins=(git macos tmux httpie docker)
 
 source $ZSH/oh-my-zsh.sh
 
