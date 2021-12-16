@@ -19,10 +19,7 @@ config checkout
  - Remember to set up your ssh keys.
 
 ## TODO
-
- - The git config should be pulled into its own file
-
- - FZF and ACK aren't installed.
+ - ACK aren't installed.
 
  - The OSX version of the package installs (brew) aren't functional
 

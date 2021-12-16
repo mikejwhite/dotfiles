@@ -1,0 +1,7 @@
+[user]
+	name = Mike White
+	email = mike.j.white@gmail.com
+[github]
+	user = mikejwhite
+[push]
+	default = simple

@@ -11,6 +11,7 @@ ZSH_THEME="agnoster"
 
 DEFAULT_USER="$USER"
 
+# setup the config alias for the git config directory
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Golang paths
@@ -100,3 +101,5 @@ bindkey '/e[B' history-beginning-search-forward
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+
+cd $HOME
