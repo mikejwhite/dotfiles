@@ -11,6 +11,9 @@ ZSH_THEME="agnoster"
 
 DEFAULT_USER="$USER"
 
+# ssh agent alias
+alias sagent='eval "$(ssh-agent -s -t 3200)" && ssh-add'
+
 # setup the config alias for the git config directory
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
