@@ -14,14 +14,14 @@ if ! [[$SHELL =~ .*zsh.* ]]; then
 fi
 
 ## oh my zsh install
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # the oh my zsh install wipes out the install zshrc, move it
 # back
 mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
 
 ## colour themes!
-git clone git://github.com/altercation/solarized.git ~/.config/github.com/altercation/solarized
+git clone https://github.com/altercation/solarized ~/.config/github.com/altercation/solarized
 
 ## vim setup
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
